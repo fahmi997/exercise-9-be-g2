@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     return res.status(200).send('API is up and running')
 });
 
+const { loginRouter, profileRouter } = require("./routers");
+app.use("/login", loginRouter);
+app.use("/profile", profileRouter)
+
 
 app.listen(PORT, () => {
     console.log('server listening on port',PORT);
