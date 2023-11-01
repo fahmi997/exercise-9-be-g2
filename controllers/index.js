@@ -1,1 +1,5 @@
-module.exports = {};
+const tweetController = require('./tweet')
+
+module.exports = {
+    tweetController
+};
