@@ -1,5 +1,8 @@
+
+const accountsRouter = require("./accounts");
 const tweetRouter = require('./tweet')
 
 module.exports = {
-    tweetRouter
+  accountsRouter,
+  tweetRouter
 };
